@@ -11,7 +11,7 @@ using std::endl;
 int main()
 {
     string concatenated;
-    for (string buffer; cin >> buffer; concatenated += buffer);
+    for (string buffer; cin >> buffer && buffer != "stop"; concatenated += buffer);
     cout << "The concatenated string is " << concatenated << endl;
 
     return 0;
